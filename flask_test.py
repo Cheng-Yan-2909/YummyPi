@@ -5,15 +5,15 @@ import json
 from RPi import GPIO
 from xml.etree import ElementTree
 import inspect
-from werkzeug.local import LocalProxy
 
+#from werkzeug.local import LocalProxy
+#session = LocalProxy(lambda: get_current_request().session)
 
 app = Flask(__name__)
 
 STATUS_ON = ["on", "switch on", "enable", "power on", "activate", "turn on", "kai"]
 STATUS_OFF = ["off", "switch off", "deactivate", "power off", "disable", "turn off", "guan"]
 
-session = LocalProxy(lambda: get_current_request().session)
 
 def get_speach(text):
     try:
@@ -37,20 +37,15 @@ def speach(text, card_title=None, card_content=None):
                 'content': card_content
             }
         },
-        'sessionAttributes': session.attributes
+        'sessionAttributes': {
+            "dev": "Cheng Yan"
+        }
     }
-
-    kw = {}
-    if hasattr(session, 'attributes_encoder'):
-        json_encoder = session.attributes_encoder
-        kw_arg_name = 'cls' if inspect.isclass(json_encoder) else 'default'
-        kw[kw_arg_name] = json_encoder
-        print(f"json encoder: {json_encoder}")
 
     print("=================================", flush=True)
     print(f"response: {response_wrapper}", flush=True)
     print("=================================", flush=True)
-    return json.dumps(response_wrapper, **kw)
+    return json.dumps(response_wrapper)
 
 
 @app.route("/", methods=['POST', 'GET'])
@@ -63,21 +58,25 @@ def default_route():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(fan_pin,GPIO.OUT)
 
+    text = "Unknown Operation"
+    s = "unknown"
     if "intent" in request_data["request"]:
         intent = request_data["request"]["intent"]
         if intent["name"] == "FanIntent":
             val = intent["slots"]["status"]["value"]
             if val in STATUS_ON:
                 GPIO.output(fan_pin,GPIO.HIGH)
-                print("Fan is on")
+                text = "Fan is now on"
+                s = "on"
             elif val in STATUS_OFF:
                 GPIO.output(fan_pin,GPIO.LOW)
-                print("Fan is off")
+                text = "Fan is now off"
+                s = "off"
             else:
                 print("unknown state")
-   
+                text = "Not sure what to do"
 
-    return speach( "hello" )
+    return speach( text, "Fan Status", "Fan is currently {s}" )
 
 
 
