@@ -7,6 +7,7 @@ from xml.etree import ElementTree
 import inspect
 
 
+
 app = Flask(__name__)
 
 STATUS_ON = ["on", "switch on", "enable", "power on", "activate", "turn on", "kai"]
@@ -45,6 +46,9 @@ def speach(text, card_title=None, card_content=None):
         kw[kw_arg_name] = json_encoder
         print(f"json encoder: {json_encoder}")
 
+    print("=================================", flush=True)
+    print(f"response: {response_wrapper}", flush=True)
+    print("=================================", flush=True)
     return json.dumps(response_wrapper, **kw)
 
 
@@ -72,14 +76,14 @@ def default_route():
                 print("unknown state")
    
 
-    return "hello", 200
+    return speach( "hello" )
 
 
 
 
 if __name__ == '__main__':
-   port = 80
-   app.run(host='127.0.0.1', port=80)
+   port = 8000
+   app.run(host='127.0.0.1', port=port)
 
 
 
