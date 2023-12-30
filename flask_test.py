@@ -1,11 +1,11 @@
-from flask import Flask, request, session
+from flask import Flask, request
 import os
 import time
 import json
 from RPi import GPIO
 from xml.etree import ElementTree
 import inspect
-
+from werkzeug.local import LocalProxy
 
 
 app = Flask(__name__)
@@ -13,6 +13,7 @@ app = Flask(__name__)
 STATUS_ON = ["on", "switch on", "enable", "power on", "activate", "turn on", "kai"]
 STATUS_OFF = ["off", "switch off", "deactivate", "power off", "disable", "turn off", "guan"]
 
+session = LocalProxy(lambda: get_current_request().session)
 
 def get_speach(text):
     try:
