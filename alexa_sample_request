@@ -1,0 +1,161 @@
+"request_data": {
+        "version": "1.0",
+        "session": {
+            "new": true,
+            "sessionId": "amzn1.echo-api.session.ef216111-86d1-45d8-8ec8-072dafccdcfa",
+            "application": {
+                "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
+            },
+            "attributes": {},
+            "user": {
+                "userId": "amzn1.ask.account.AMAZM33T3EQDOJDG7KAQAWZ6T6VV2ZVWOWY57T7YSFCZI6VDYOJIUHV3QNB3DHAR6KOUUYF7DYTNOXNVNU44CMAVP2YF5PVDUMTIZZLZTNCTN4LTQ4LMWMI2K5LFVJGWJJXBVKMSHVLPN7EF2SAW4NIBKTZBMMLR7VSDFGFBVUY6DJRSQRKGGTNLTJQP2Z4K55ULY77MBY4ZT5Z46XGUW73V7GG3ASOLF3TOPKWKKYYA"
+            }
+        },
+        "context": {
+            "Viewports": [
+                {
+                    "type": "APL",
+                    "id": "main",
+                    "shape": "RECTANGLE",
+                    "dpi": 213,
+                    "presentationType": "STANDARD",
+                    "canRotate": false,
+                    "configuration": {
+                        "current": {
+                            "mode": "HUB",
+                            "video": {
+                                "codecs": [
+                                    "H_264_42",
+                                    "H_264_41"
+                                ]
+                            },
+                            "size": {
+                                "type": "DISCRETE",
+                                "pixelWidth": 1280,
+                                "pixelHeight": 800
+                            }
+                        }
+                    }
+                }
+            ],
+            "Viewport": {
+                "experiences": [
+                    {
+                        "arcMinuteWidth": 346,
+                        "arcMinuteHeight": 216,
+                        "canRotate": false,
+                        "canResize": false
+                    }
+                ],
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "pixelWidth": 1280,
+                "pixelHeight": 800,
+                "dpi": 213,
+                "currentPixelWidth": 1280,
+                "currentPixelHeight": 800,
+                "touch": [
+                    "SINGLE"
+                ],
+                "video": {
+                    "codecs": [
+                        "H_264_42",
+                        "H_264_41"
+                    ]
+                }
+            },
+            "Extensions": {
+                "available": {
+                    "aplext:backstack:10": {}
+                }
+            },
+            "Advertising": {
+                "advertisingId": "00000000-0000-0000-0000-000000000000",
+                "limitAdTracking": true
+            },
+            "System": {
+                "application": {
+                    "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
+                },
+                "user": {
+                    "userId": "amzn1.ask.account.AMAZM33T3EQDOJDG7KAQAWZ6T6VV2ZVWOWY57T7YSFCZI6VDYOJIUHV3QNB3DHAR6KOUUYF7DYTNOXNVNU44CMAVP2YF5PVDUMTIZZLZTNCTN4LTQ4LMWMI2K5LFVJGWJJXBVKMSHVLPN7EF2SAW4NIBKTZBMMLR7VSDFGFBVUY6DJRSQRKGGTNLTJQP2Z4K55ULY77MBY4ZT5Z46XGUW73V7GG3ASOLF3TOPKWKKYYA"
+                },
+                "device": {
+                    "deviceId": "amzn1.ask.device.AMA6CGDI3SGZPCJBID4Y7V4YWMOCU5HSZOM6FUB6MOOYGNKWKJD3GDMPWAIJSGT6VVDICJXVKTHK5STW725CJ7BXJUQZ2M7KUEEGRVKXUVB7CGNA77LICIKKA5V4AJDTU4ILNC66SXDDDXTNGHLGA5UE5BQSZPIFG43N3XPUIKM7AU27QWKEHVTBGFLJPGPJ35546SWFMKOT5CRW",
+                    "supportedInterfaces": {}
+                },
+                "apiEndpoint": "https://api.amazonalexa.com",
+                "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwMzkwNzk0OSwiaWF0IjoxNzAzOTA3ODg5LCJuYmYiOjE3MDM5MDc4ODksInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFEK2N3K1pDOExieVdzZS9HZTVYeEM5VGdFQUFBQUFBQUJxQ3RtZ3hheElXL3hXSFJVeTdtQURHaUZ6WmZ2NERkUURicUlrWlNhb0ZUaW1vbjdvZWVPUHBKSUhaczB1ZjMyK3d5REpXR3lHcGtxT01GYUlYRHpZaUpPMU42S2VsVzJKT1g5UnQ1ajhwbUc1a1J0VDF0MmU4amRIc0NmOGZ3UHRleUpPRDFlckh3NmpYTnpGNHdNdTZuaVBrYmFUTVBzQXVyKy8zUmJkSXlmUExKd29EbzR4YjhuVkZldGdqeDB5cHJtWFJYdENjNlJ0bk1kNWJwZENIaTVkL21mREZMd0RLeEpnbjdVVVkxeVcvS2w4WWRQWXovYXd5dXlHWHZLVXNPMzEzNzFNVXlTRG1qRStVTTZnQWdlM0JyYjR6MzBKd1dUdnJrdnRGdi9mOWdsNUxPaWFUL3NXUDhQdnN4d004YnJRbVZ4a1JaejV2N2srWXFuMktydGNhQzZZTXZ0d0RiVjFCREllMHlDSDg3QnUwV2NXb1VqQlpLSGpWYXh6MWcrQWF6VkJkd0U2WDBKQlFreEVaWEdWSWtVcGJ4TWoyT2JHbXpMWWFWQUNpZ2libDJwamZGcVdxNGVZIiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.Gq-HYQQNOoOBO9xM74nci3iSqC4jxZZ8p70AfdNHNaaoYocy22h2cJ07IFoDJmCLSPQLSUmp57P4DmxLOcUs5ri5sWFxQR_z9etyMExsDddec1Oux1CskTPzI5c8K7tlsEDgsY0TSIw9CTnsxtMc80UlrLXqTuZeBl2tPAUW2vmuLngU9JWRMJC5G3ZIvCaAQ8qDp_6CR_35kzwAYmpC64VrgUdnzccM1kNu7y23grM0U3ijnAne1g3s7YLFrkm3fCZTKr0hRLCb_i1mmXHXhzKRrYencP6DeCDsZpDYE4binTUSo2EJwekV8CQyaFBCaDq-R7KpEk7eIFCgNSxPkw"
+            }
+        },
+        "request": {
+            "type": "IntentRequest",
+            "requestId": "amzn1.echo-api.request.30138c69-deb8-4148-89bc-e5ccc9959350",
+            "locale": "en-US",
+            "timestamp": "2023-12-30T03:44:49Z",
+            "intent": {
+                "name": "FanIntent",
+                "confirmationStatus": "NONE",
+                "slots": {
+                    "status": {
+                        "name": "status",
+                        "value": "turn on",
+                        "resolutions": {
+                            "resolutionsPerAuthority": [
+                                {
+                                    "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9.STATUS",
+                                    "status": {
+                                        "code": "ER_SUCCESS_MATCH"
+                                    },
+                                    "values": [
+                                        {
+                                            "value": {
+                                                "name": "off",
+                                                "id": "off"
+                                            }
+                                        },
+                                        {
+                                            "value": {
+                                                "name": "on",
+                                                "id": "on"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "confirmationStatus": "NONE",
+                        "source": "USER",
+                        "slotValue": {
+                            "type": "Simple",
+                            "value": "turn on",
+                            "resolutions": {
+                                "resolutionsPerAuthority": [
+                                    {
+                                        "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9.STATUS",
+                                        "status": {
+                                            "code": "ER_SUCCESS_MATCH"
+                                        },
+                                        "values": [
+                                            {
+                                                "value": {
+                                                    "name": "off",
+                                                    "id": "off"
+                                                }
+                                            },
+                                            {
+                                                "value": {
+                                                    "name": "on",
+                                                    "id": "on"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

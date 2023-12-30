@@ -1,0 +1,150 @@
+
+    "request_data": {
+        "version": "1.0",
+        "session": {
+            "new": true,
+            "sessionId": "amzn1.echo-api.session.55832e29-df90-49bb-9a69-6324dd806ae8",
+            "application": {
+                "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
+            },
+            "attributes": {},
+            "user": {
+                "userId": "amzn1.ask.account.AMAZM33T3EQDOJDG7KAQAWZ6T6VV2ZVWOWY57T7YSFCZI6VDYOJIUHV3QNB3DHAR6KOUUYF7DYTNOXNVNU44CMAVP2YF5PVDUMTIZZLZTNCTN4LTQ4LMWMI2K5LFVJGWJJXBVKMSHVLPN7EF2SAW4NIBKTZBMMLR7VSDFGFBVUY6DJRSQRKGGTNLTJQP2Z4K55ULY77MBY4ZT5Z46XGUW73V7GG3ASOLF3TOPKWKKYYA"
+            }
+        },
+        "context": {
+            "Viewports": [
+                {
+                    "type": "APL",
+                    "id": "main",
+                    "shape": "RECTANGLE",
+                    "dpi": 213,
+                    "presentationType": "STANDARD",
+                    "canRotate": false,
+                    "configuration": {
+                        "current": {
+                            "mode": "HUB",
+                            "video": {
+                                "codecs": [
+                                    "H_264_42",
+                                    "H_264_41"
+                                ]
+                            },
+                            "size": {
+                                "type": "DISCRETE",
+                                "pixelWidth": 1280,
+                                "pixelHeight": 800
+                            }
+                        }
+                    }
+                }
+            ],
+            "Viewport": {
+                "experiences": [
+                    {
+                        "arcMinuteWidth": 346,
+                        "arcMinuteHeight": 216,
+                        "canRotate": false,
+                        "canResize": false
+                    }
+                ],
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "pixelWidth": 1280,
+                "pixelHeight": 800,
+                "dpi": 213,
+                "currentPixelWidth": 1280,
+                "currentPixelHeight": 800,
+                "touch": [
+                    "SINGLE"
+                ],
+                "video": {
+                    "codecs": [
+                        "H_264_42",
+                        "H_264_41"
+                    ]
+                }
+            },
+            "Extensions": {
+                "available": {
+                    "aplext:backstack:10": {}
+                }
+            },
+            "Advertising": {
+                "advertisingId": "00000000-0000-0000-0000-000000000000",
+                "limitAdTracking": true
+            },
+            "System": {
+                "application": {
+                    "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
+                },
+                "user": {
+                    "userId": "amzn1.ask.account.AMAZM33T3EQDOJDG7KAQAWZ6T6VV2ZVWOWY57T7YSFCZI6VDYOJIUHV3QNB3DHAR6KOUUYF7DYTNOXNVNU44CMAVP2YF5PVDUMTIZZLZTNCTN4LTQ4LMWMI2K5LFVJGWJJXBVKMSHVLPN7EF2SAW4NIBKTZBMMLR7VSDFGFBVUY6DJRSQRKGGTNLTJQP2Z4K55ULY77MBY4ZT5Z46XGUW73V7GG3ASOLF3TOPKWKKYYA"
+                },
+                "device": {
+                    "deviceId": "amzn1.ask.device.AMA6CGDI3SGZPCJBID4Y7V4YWMOCU5HSZOM6FUB6MOOYGNKWKJD3GDMPWAIJSGT6VVDICJXVKTHK5STW725CJ7BXJUQZ2M7KUEEGRVKXUVB7CGNA77LICIKKA5V4AJDTU4ILNC66SXDDDXTNGHLGA5UE5BQSZPIFG43N3XPUIKM7AU27QWKEHVTBGFLJPGPJ35546SWFMKOT5CRW",
+                    "supportedInterfaces": {}
+                },
+                "apiEndpoint": "https://api.amazonalexa.com",
+                "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwMzkwODE5MywiaWF0IjoxNzAzOTA4MTMzLCJuYmYiOjE3MDM5MDgxMzMsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFEK2N3K1pDOExieVdzZS9HZTVYeEM5VGdFQUFBQUFBQUJLc2JJazh5VCtRTzIrbzE4bmxrZitic0VrTldVdW1Db2FGNERrS2dvVlRuQnMyVWVtWGpqK1V1MDZSbC81UEErSlMyUzZTZmNTY3BFY2JRWXJLRUJvWHd5Z1FQZG93ZVVHVm5hRnJURkRaUTVrNVl2THp6TTlaZjh1c2ZBWFlXYjU3bzF2K3FrSE52aDBsT1pFd0x6dWxQdm9DRVhSUk9wQzc4NytUeXhhdUltWExiZ0ZGVFpVREkycVBVbHJpS2pVOHVYdlpheENTNTlqSm01a25IU1R2MVIyWTYyUHREWWUzZjVEVUtVd2NkdUl4cEh4d0w1RTVoNC9XT2U3YXp6UDM5SzVtWndDWXc5NEFyWm02bTI5cXJJZDdHeVVBT2s5TG1OZGxmV0o0VDVINVBiUjJqMXc4VWRlYVo5VUMwbmxRVkovMnhzOHVQdEpvMTN5UXB0NXY5OTZZY0FRQjk4SGhNL0Q2R2FkZkZhN2dHWDN1dTJSWTh2VTc2Zk5TcXFBdkJMWDY1czlHbnZTZjVRbmcvREdVVUFqSE84VUZObW44RXlOSm81TnRMbEZ3SWxtUGpIakNQc1JTUFpFIiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.a20n1eB8GlbhT-B9sm6qpFmgALrRRZGmkt_no3gbGdiyZ1MZSjVDXMbKK7PWks6O9Mm-jLqIVNNTRrr7g3ivWXyV07bGRhuyLaoNCenCLR2KGOMkFELyxejL-6tkohE65n57RpW0L-yODrjwUzeoJ8otGaAU9_tB0tMj3S2wR--rAQQQjdlsY5lcyFvH4ix8FyGKnBoPoL-ONxRXoApPRtCrH8Ge7a1Z4QlXjs2mpRc8b4Xk669GiYQWJvEQI8GqI_tP3dzAr2K3EsrhROhTyFg2YLIQP4bCWi7BqEhgkZSHgipbl1XL9aVdxl-2eKa7XkPqx6Mro_RT-gbKC1bx2A"
+            }
+        },
+        "request": {
+            "type": "IntentRequest",
+            "requestId": "amzn1.echo-api.request.ee9b49c3-6383-4cff-bc9c-25ce5cb585a7",
+            "locale": "en-US",
+            "timestamp": "2023-12-30T03:48:53Z",
+            "intent": {
+                "name": "FanIntent",
+                "confirmationStatus": "NONE",
+                "slots": {
+                    "status": {
+                        "name": "status",
+                        "value": "turn off",
+                        "resolutions": {
+                            "resolutionsPerAuthority": [
+                                {
+                                    "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9.STATUS",
+                                    "status": {
+                                        "code": "ER_SUCCESS_MATCH"
+                                    },
+                                    "values": [
+                                        {
+                                            "value": {
+                                                "name": "on",
+                                                "id": "on"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "confirmationStatus": "NONE",
+                        "source": "USER",
+                        "slotValue": {
+                            "type": "Simple",
+                            "value": "turn off",
+                            "resolutions": {
+                                "resolutionsPerAuthority": [
+                                    {
+                                        "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9.STATUS",
+                                        "status": {
+                                            "code": "ER_SUCCESS_MATCH"
+                                        },
+                                        "values": [
+                                            {
+                                                "value": {
+                                                    "name": "on",
+                                                    "id": "on"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
