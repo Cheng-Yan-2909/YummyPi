@@ -1,14 +1,51 @@
-from flask import Flask, request
+from flask import Flask, request, session
 import os
 import time
 import json
-import RPi.GPIO as GPIO
+from RPi import GPIO
+from xml.etree import ElementTree
+import inspect
 
 
 app = Flask(__name__)
 
-STATUSON = ["on", "switch on", "enable", "power on", "activate", "turn on", "kai"] 
-STATUSOFF = ["off", "switch off", "deactivate", "power off", "disable", "turn off", "guan"]
+STATUS_ON = ["on", "switch on", "enable", "power on", "activate", "turn on", "kai"]
+STATUS_OFF = ["off", "switch off", "deactivate", "power off", "disable", "turn off", "guan"]
+
+
+def get_speach(text):
+    try:
+        xml_doc = ElementTree.fromstring(text)
+        if xml_doc.tag == 'speak':
+            return {'type': 'SSML', 'ssml': text}
+    except:
+        pass
+
+    return {'type': 'PlainText', 'text': text}
+
+def speach(text, card_title=None, card_content=None):
+    response_wrapper = {
+        'version': '1.0',
+        'response': {
+            "shouldEndSession": True,
+            "outputSpeech": get_speach(text),
+            "card": {
+                'type': 'Simple',
+                'title': card_title,
+                'content': card_content
+            }
+        },
+        'sessionAttributes': session.attributes
+    }
+
+    kw = {}
+    if hasattr(session, 'attributes_encoder'):
+        json_encoder = session.attributes_encoder
+        kw_arg_name = 'cls' if inspect.isclass(json_encoder) else 'default'
+        kw[kw_arg_name] = json_encoder
+        print(f"json encoder: {json_encoder}")
+
+    return json.dumps(response_wrapper, **kw)
 
 
 @app.route("/", methods=['POST', 'GET'])
@@ -25,10 +62,10 @@ def default_route():
         intent = request_data["request"]["intent"]
         if intent["name"] == "FanIntent":
             val = intent["slots"]["status"]["value"]
-            if val in STATUSON:
+            if val in STATUS_ON:
                 GPIO.output(fan_pin,GPIO.HIGH)
                 print("Fan is on")
-            elif val in STATUSOFF:
+            elif val in STATUS_OFF:
                 GPIO.output(fan_pin,GPIO.LOW)
                 print("Fan is off")
             else:
@@ -43,12 +80,6 @@ def default_route():
 if __name__ == '__main__':
    port = 80
    app.run(host='127.0.0.1', port=80)
-
-
-
-
-
-
 
 
 
