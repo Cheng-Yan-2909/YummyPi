@@ -76,7 +76,7 @@ def default_route():
                 print("unknown state")
                 text = "Not sure what to do"
 
-    return speach( text, "Fan Status", "Fan is currently {s}" )
+    return speach( text, "Fan Status", f"Fan is currently {s}" )
 
 
 
