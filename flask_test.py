@@ -6,9 +6,6 @@ from RPi import GPIO
 from xml.etree import ElementTree
 import inspect
 
-#from werkzeug.local import LocalProxy
-#session = LocalProxy(lambda: get_current_request().session)
-
 app = Flask(__name__)
 
 STATUS_ON = ["on", "switch on", "enable", "power on", "activate", "turn on", "kai"]
