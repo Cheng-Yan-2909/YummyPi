@@ -80,8 +80,11 @@ def process_alexa_request(request_data):
                 return speach(text, "Fan Status", f"Fan is currently {s}")
             else:
                 return speach("Unknown command", "Fan Status", f"Fan is currently {s}")
+        elif "type" in request_data["request"]:
+            t = request_data["request"]["type"]
+            return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized")
         else:
-            print("================= no 'intent' found ====================", flush=True)
+            print("================= unknown request ====================", flush=True)
     else:
         print("================= no 'request' found ====================", flush=True)
 
