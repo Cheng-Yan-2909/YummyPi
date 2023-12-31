@@ -84,16 +84,19 @@ def process_alexa_request(request_data):
 
         elif "type" in request_data["request"]:
             t = request_data["request"]["type"]
-            return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized", False)
+            print(f"================= unknown request type: {t} ====================", flush=True)
 
-        else:
-            print("================= unknown request ====================", flush=True)
-            all_key_list = request_data.keys()
+            all_key_list = list(request_data.keys())
             for k in all_key_list:
                 if "certificationParam" in k:
                     print("Found 'certificationParam' in request json")
                     return "Bad Request", 400
-                
+
+            return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized", False)
+
+        else:
+            print("==================== unknown request ==================", flush=True)
+
     else:
         print("================= no 'request' found ====================", flush=True)
 
