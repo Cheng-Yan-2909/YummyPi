@@ -22,7 +22,7 @@ def get_speach(text):
 
     return {'type': 'PlainText', 'text': text}
 
-def speach(text, card_title=None, card_content=None):
+def speach(text, card_title=None, card_content=None, endSession=True):
     print("=========== speach response ==============", flush=True)
     print(text, flush=True)
     print("==========================================", flush=True)
@@ -75,16 +75,25 @@ def process_alexa_request(request_data):
                     text = "Fan is now off"
                     s = "off"
                 else:
-                    text = "Not sure what to do"
+                    text = f"Unknown FanIntent value {val}"
 
                 return speach(text, "Fan Status", f"Fan is currently {s}")
             else:
-                return speach("Unknown command", "Fan Status", f"Fan is currently {s}")
+                text = f"Not sure what to do with intent {intent['name']}"
+                return speach(text, "Fan Status", f"Fan is currently {s}")
+
         elif "type" in request_data["request"]:
             t = request_data["request"]["type"]
-            return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized")
+            return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized", False)
+
         else:
             print("================= unknown request ====================", flush=True)
+            all_key_list = request_data.keys()
+            for k in all_key_list:
+                if "certificationParam" in k:
+                    print("Found 'certificationParam' in request json")
+                    return "Bad Request", 400
+                
     else:
         print("================= no 'request' found ====================", flush=True)
 
