@@ -73,8 +73,17 @@ def process_alexa_request(request_data):
                     print("unknown state")
                     text = "Not sure what to do"
 
-        return speach(text, "Fan Status", f"Fan is currently {s}")
+                return speach(text, "Fan Status", f"Fan is currently {s}")
+            else:
+                return speach("Unknown command", "Fan Status", f"Fan is currently {s}")
 
+    return "Bad Request", 400
+
+
+def home_page():
+    return """
+        Welcome Unknown dude
+    """, 200
 
 @app.route("/", methods=['POST', 'GET'])
 def default_route():
@@ -84,9 +93,7 @@ def default_route():
     except:
         pass
 
-    return """
-    Welcome Unknown dude
-    """
+    return home_page()
 
 
 if __name__ == '__main__':
