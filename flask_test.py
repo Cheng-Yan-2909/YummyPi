@@ -47,7 +47,13 @@ def speach(text, card_title=None, card_content=None):
 
 @app.route("/", methods=['POST', 'GET'])
 def default_route():
-    request_data = request.get_json()
+    request_data = {}
+
+    try:
+        request_data = request.get_json()
+    except:
+        pass
+
     print( json.dumps(request_data), flush=True )
     print("============================================", flush=True)
     fan_pin = 4
@@ -57,23 +63,27 @@ def default_route():
 
     text = "Unknown Operation"
     s = "unknown"
-    if "intent" in request_data["request"]:
-        intent = request_data["request"]["intent"]
-        if intent["name"] == "FanIntent":
-            val = intent["slots"]["status"]["value"]
-            if val in STATUS_ON:
-                GPIO.output(fan_pin,GPIO.HIGH)
-                text = "Fan is now on"
-                s = "on"
-            elif val in STATUS_OFF:
-                GPIO.output(fan_pin,GPIO.LOW)
-                text = "Fan is now off"
-                s = "off"
-            else:
-                print("unknown state")
-                text = "Not sure what to do"
+    
+    if "request" in request_data:
+        if "intent" in request_data["request"]:
+            intent = request_data["request"]["intent"]
+            if intent["name"] == "FanIntent":
+                val = intent["slots"]["status"]["value"]
+                if val in STATUS_ON:
+                    GPIO.output(fan_pin,GPIO.HIGH)
+                    text = "Fan is now on"
+                    s = "on"
+                elif val in STATUS_OFF:
+                    GPIO.output(fan_pin,GPIO.LOW)
+                    text = "Fan is now off"
+                    s = "off"
+                else:
+                    print("unknown state")
+                    text = "Not sure what to do"
 
-    return speach( text, "Fan Status", f"Fan is currently {s}" )
+        return speach( text, "Fan Status", f"Fan is currently {s}" )
+
+    return "{}"
 
 
 
