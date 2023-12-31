@@ -23,6 +23,10 @@ def get_speach(text):
     return {'type': 'PlainText', 'text': text}
 
 def speach(text, card_title=None, card_content=None):
+    print("=========== speach response ==============", flush=True)
+    print(text, flush=True)
+    print("==========================================", flush=True)
+
     response_wrapper = {
         'version': '1.0',
         'response': {
@@ -46,6 +50,7 @@ def speach(text, card_title=None, card_content=None):
 
 
 def process_alexa_request(request_data):
+    print("============== Request Data ================", flush=True)
     print(json.dumps(request_data), flush=True)
     print("============================================", flush=True)
     fan_pin = 4
@@ -70,12 +75,15 @@ def process_alexa_request(request_data):
                     text = "Fan is now off"
                     s = "off"
                 else:
-                    print("unknown state")
                     text = "Not sure what to do"
 
                 return speach(text, "Fan Status", f"Fan is currently {s}")
             else:
                 return speach("Unknown command", "Fan Status", f"Fan is currently {s}")
+        else:
+            print("================= no 'intent' found ====================", flush=True)
+    else:
+        print("================= no 'request' found ====================", flush=True)
 
     return "Bad Request", 400
 
