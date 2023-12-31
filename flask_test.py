@@ -44,14 +44,14 @@ def speach(text, card_title=None, card_content=None):
     }
 
     print("=================================", flush=True)
-    print(f"response: {response_wrapper}", flush=True)
+    print(f"response: {json.dumps(response_wrapper, indent=4)}", flush=True)
     print("=================================", flush=True)
     return json.dumps(response_wrapper)
 
 
 def process_alexa_request(request_data):
     print("============== Request Data ================", flush=True)
-    print(json.dumps(request_data), flush=True)
+    print(json.dumps(request_data, indent=4), flush=True)
     print("============================================", flush=True)
     fan_pin = 4
     GPIO.setwarnings(False)
