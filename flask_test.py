@@ -45,47 +45,48 @@ def speach(text, card_title=None, card_content=None):
     return json.dumps(response_wrapper)
 
 
-@app.route("/", methods=['POST', 'GET'])
-def default_route():
-    request_data = {}
-
-    try:
-        request_data = request.get_json()
-    except:
-        pass
-
-    print( json.dumps(request_data), flush=True )
+def process_alexa_request(request_data):
+    print(json.dumps(request_data), flush=True)
     print("============================================", flush=True)
     fan_pin = 4
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(fan_pin,GPIO.OUT)
+    GPIO.setup(fan_pin, GPIO.OUT)
 
     text = "Unknown Operation"
     s = "unknown"
-    
+
     if "request" in request_data:
         if "intent" in request_data["request"]:
             intent = request_data["request"]["intent"]
             if intent["name"] == "FanIntent":
                 val = intent["slots"]["status"]["value"]
                 if val in STATUS_ON:
-                    GPIO.output(fan_pin,GPIO.HIGH)
+                    GPIO.output(fan_pin, GPIO.HIGH)
                     text = "Fan is now on"
                     s = "on"
                 elif val in STATUS_OFF:
-                    GPIO.output(fan_pin,GPIO.LOW)
+                    GPIO.output(fan_pin, GPIO.LOW)
                     text = "Fan is now off"
                     s = "off"
                 else:
                     print("unknown state")
                     text = "Not sure what to do"
 
-        return speach( text, "Fan Status", f"Fan is currently {s}" )
-
-    return "{}"
+        return speach(text, "Fan Status", f"Fan is currently {s}")
 
 
+@app.route("/", methods=['POST', 'GET'])
+def default_route():
+
+    try:
+        return process_alexa_request(request.get_json())
+    except:
+        pass
+
+    return """
+    Welcome Unknown dude
+    """
 
 
 if __name__ == '__main__':
