@@ -59,6 +59,8 @@ def fan_intent(val):
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(fan_pin, GPIO.OUT)
 
+    s = val
+    text = f"Unknown FanIntent value {val}"
     if val in STATUS_ON:
         GPIO.output(fan_pin, GPIO.HIGH)
         text = "Fan is now on"
@@ -67,8 +69,6 @@ def fan_intent(val):
         GPIO.output(fan_pin, GPIO.LOW)
         text = "Fan is now off"
         s = "off"
-    else:
-        text = f"Unknown FanIntent value {val}"
 
     return speach(text, "Fan Status", f"Fan is currently {s}")
 
@@ -117,7 +117,7 @@ def check_user_id(request_data):
             return True
 
         return false
-    
+
     return true
 
 def process_alexa_request(request_data):
