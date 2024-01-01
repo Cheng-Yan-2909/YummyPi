@@ -134,9 +134,6 @@ def process_alexa_request(request_data):
     s = "unknown"
 
     if "request" in request_data:
-        if not check_user_id(request_data):
-            return "Bad Request", 400
-
         if "intent" in request_data["request"]:
             intent = request_data["request"]["intent"]
             if intent["name"] == "FanIntent":
@@ -159,6 +156,9 @@ def process_alexa_request(request_data):
             t = request_data["request"]["type"]
             if "LaunchRequest" == request_data["request"]["type"]:
                 save_user_id(request_data)
+
+            if not check_user_id(request_data):
+                return "Bad Request", 400
 
             print(f"================= request type: {t} ====================", flush=True)
             return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized", False)
