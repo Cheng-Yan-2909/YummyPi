@@ -149,9 +149,6 @@ def process_alexa_request(request_data):
                 return device_intent(val)
 
             else:
-                if not check_user_id(request_data):
-                    return "Bad Request", 400
-                
                 text = f"Not sure what to do with intent {intent['name']}"
                 return speach(text, "Fan Status", f"Fan is currently {s}")
 
@@ -159,9 +156,6 @@ def process_alexa_request(request_data):
             t = request_data["request"]["type"]
             if "LaunchRequest" == request_data["request"]["type"]:
                 save_user_id(request_data)
-
-            if not check_user_id(request_data):
-                return "Bad Request", 400
 
             print(f"================= request type: {t} ====================", flush=True)
             return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized", False)
