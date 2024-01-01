@@ -149,6 +149,9 @@ def process_alexa_request(request_data):
                 return device_intent(val)
 
             else:
+                if not check_user_id(request_data):
+                    return "Bad Request", 400
+                
                 text = f"Not sure what to do with intent {intent['name']}"
                 return speach(text, "Fan Status", f"Fan is currently {s}")
 
