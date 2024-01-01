@@ -54,21 +54,25 @@ def speach(text, card_title=None, card_content=None, endSession=True):
 
 
 def fan_intent(val):
-    fan_pin = 4
-    GPIO.setwarnings(False)
-    GPIO.setmode(GPIO.BCM)
-    GPIO.setup(fan_pin, GPIO.OUT)
+    s = "unknown"
+    text = "failed to get FanIntent value"
 
-    s = val
-    text = f"Unknown FanIntent value {val}"
-    if val in STATUS_ON:
-        GPIO.output(fan_pin, GPIO.HIGH)
-        text = "Fan is now on"
-        s = "on"
-    elif val in STATUS_OFF:
-        GPIO.output(fan_pin, GPIO.LOW)
-        text = "Fan is now off"
-        s = "off"
+    if val is not None:
+        fan_pin = 4
+        GPIO.setwarnings(False)
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(fan_pin, GPIO.OUT)
+
+        s = val
+        text = f"Unknown FanIntent value {val}"
+        if val in STATUS_ON:
+            GPIO.output(fan_pin, GPIO.HIGH)
+            text = "Fan is now on"
+            s = "on"
+        elif val in STATUS_OFF:
+            GPIO.output(fan_pin, GPIO.LOW)
+            text = "Fan is now off"
+            s = "off"
 
     return speach(text, "Fan Status", f"Fan is currently {s}")
 
@@ -136,10 +140,16 @@ def process_alexa_request(request_data):
         if "intent" in request_data["request"]:
             intent = request_data["request"]["intent"]
             if intent["name"] == "FanIntent":
-                return fan_intent(intent["slots"]["status"]["value"])
+                val = None
+                if "value" in intent["slots"]["status"]:
+                    val = intent["slots"]["status"]["value"]
+                return fan_intent(val)
 
             elif intent["name"] == "DeviceIntent":
-                return device_intent(intent["slots"]["status"]["value"])
+                val = None
+                if "value" in intent["slots"]["status"]:
+                    val = intent["slots"]["status"]["value"]
+                return device_intent(val)
 
             else:
                 text = f"Not sure what to do with intent {intent['name']}"
