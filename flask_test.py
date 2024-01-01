@@ -74,7 +74,7 @@ def fan_intent(val):
 
 
 def device_intent(val):
-    pass
+    return speach("Device is nice", "Device State", "The device's states")
 
 
 def get_user_id(request_data):
@@ -131,10 +131,10 @@ def process_alexa_request(request_data):
         if "intent" in request_data["request"]:
             intent = request_data["request"]["intent"]
             val = intent["slots"]["status"]["value"]
-            if val == "FanIntent":
+            if intent == "FanIntent":
                 return fan_intent(val)
 
-            elif val == "DeviceIntent":
+            elif intent == "DeviceIntent":
                 return device_intent(val)
 
             else:
