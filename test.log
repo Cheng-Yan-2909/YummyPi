@@ -5,7 +5,7 @@
     "version": "1.0",
     "session": {
         "new": true,
-        "sessionId": "amzn1.echo-api.session.318e043c-d0cb-4721-8b08-a5e31c3ca980",
+        "sessionId": "amzn1.echo-api.session.6cd7d6a3-f34f-45a1-aec6-c91a9ccd132a",
         "application": {
             "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
         },
@@ -88,28 +88,42 @@
                 "supportedInterfaces": {}
             },
             "apiEndpoint": "https://api.amazonalexa.com",
-            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwNDA4ODkyNCwiaWF0IjoxNzA0MDg4ODY0LCJuYmYiOjE3MDQwODg4NjQsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBUVBURjF3MW15dnp0OTZqanBGVktKVGdFQUFBQUFBQUJOcVFrb1UzcjQ4V1ZsbUJQa0VCYmd2WjJ1SVRybzNuSEp2eTRNNTBMRGhlRXNVVUVuYk4ycVBrd3JObzFnK2RyZGZWemJoVjMwMVgyNkFhNEtGS29wRy9NU3UzaW1INm5DTUVtVDZPSEJzZ2psQWVtN0xFRWN1TGwvalZwNWQ3UHlyYzZIeVlnaG8rZXJtRGYvOFpsc2cwdG1jS3EzT2R2N2FzU1hJMHNoMFVob0pIVDJNUFZxc0NUU1R1SDVJeHZXZjBzUksxYnJyR1Y2M1R3SlRrb2NvTWsxNzMwcERwVWw3cXQ2NkFHTDc3UzAxaitFeDFiQjB3OU1qNzFvT1hsbW5rU2JZcWxYTEZrbHpJaXBzdFJkV29Sa3Y1b0Z1aUpFN0JObWJHRjNDR3ZTZld1WmcxY2lmUWErMlQ5djU5bzRSV3FaQlFtNHNRREdhaFdDdDhuVmQxWnpTWUpGWEY4dTlsWjlCZTJ1dkVCaGJmdnZXTHBhc3FVVXdWcURYZDV1dmlRSVkvN2IyVkhkYTF0V09CdWhQTXZCakJFck5KY1N5ZjNUem1QTzk1MWV0UWpKbC9rYU0wVXpKVjlNIiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.hZJsD5OoGKlaZwoB9XTeD-26_N6WcI3rZ2mHYYOB3uGJF_TeGGF2pd6lJdgggu_OooaMgyAsKV-DMVlpImUqLUEUF5rvu92CuzZRbiyAZ6bStQTvw07R9VIrIeDOvxwIk5ioCWtpAgpwd5TldqgNmND-dJmicOwg-NzV8anH7UFNUjb9VrZjkcUmKG0uDxhG-gsvFVMhb0eXDIq9_pQGRpbPn3IXafilVWYMlbADSTf9ZT9TDgIRBCRU2z8ABdqV3dCImKZQ75B9o-NpE405TT2vDa-Y1s4SrqZ9wCglhW3yowQtR71Yyjdkw_KNqwOX_L4u1boN7c8iK3WKQI6iTg"
+            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwNDA4OTEzOCwiaWF0IjoxNzA0MDg5MDc4LCJuYmYiOjE3MDQwODkwNzgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBUVBURjF3MW15dnp0OTZqanBGVktKVGdFQUFBQUFBQUNOTnBYWWQ5NXBQZkJEbHJjNzhkSzVZTWRHOUU1UXN2LzcxeUhMUHNCTWtpaStRTklna2lrclhRSlJlSVFiUll2NkZmQXpralUxWStaZXBSRlVNVUV0VXhoUS9BcXlxY2hDeGNRZ3BUNFNKWElWUXQ5NmtENTBWaVVveVVnS01tSml0NElNank5UVZxT0FUcTR2T3M1Ri9PNFBTUXlDakVmbUZtOVFET1VpdDRZekFlM2UzSXdXSTdVdjJQWFpNWWg2cWlHZFRwSnlMYUVYaFVWaC9Edm8rbk5oSElLYk55LzFUVnRtTXVub3pWMklNS093bW9QSi9FYUcrYXNXVkxORzFuMWhIQWdvbWE3Yy9WelMxUG0vbStlaVFQb29weHpkdmJiRmpaeDdwMFk5bE1NNjJ0aTU4bVZBRnhiYmcyTzJycjNNS2VsTVVnbkRXZkpDaDlpVzlUaXJ2M2lGb2hhOEJpdHJVcFBaTTI5dko3Q1RBdUg1OWxvc2NCK3hKVDM2cGxObnZVQkNmUmtWL1Vza3VRbnc0T2xtZVRQcmcxN0Z6ZFA0dTlGMDc5aTlNVmdDNWZQdHdoc0dVZFE4IiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.iQHylApLAV4K2Kk2Rqz4_pQINA3vQfmpbHi1Wvq-5MJFJTxBD7vOQlt4Cr_AfDmDD0PlclqvZ9c0RjEff7yBcDaX0f7iD2G-yYBjVNfQ1Y7z9wNRswlwa7S9QLeCY1cKan3OF9XhRqA8b_229RpY_mpQZRSA6XAoqTcbkZpW-CMZUFz2E6-EfcVJbwKJJMAg-UUmmjfc_KnIWZdEo45DmnNPXAqINYasGuxc0sWXJUmxy9GvY9WswBMheLsxJtD1t6y37JgOi7Hbd6atoPkx5j1-3Xhp2tGeTMykJ6P2TO-cjaDaoowE_bN6DUPD2KHqcPMH4lNQjybstD0OlFlwOg"
         }
     },
     "request": {
         "type": "IntentRequest",
-        "requestId": "amzn1.echo-api.request.cf5f0afd-c974-4551-95f8-f44fd86ec714",
+        "requestId": "amzn1.echo-api.request.78ceb1d2-daf3-423d-afa5-9e14b9bb39bc",
         "locale": "en-US",
-        "timestamp": "2024-01-01T06:01:04Z",
+        "timestamp": "2024-01-01T06:04:38Z",
         "intent": {
             "name": "FanIntent",
             "confirmationStatus": "NONE",
             "slots": {
                 "status": {
                     "name": "status",
-                    "value": "state",
+                    "value": "turn on",
                     "resolutions": {
                         "resolutionsPerAuthority": [
                             {
                                 "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9.STATUS",
                                 "status": {
-                                    "code": "ER_SUCCESS_NO_MATCH"
-                                }
+                                    "code": "ER_SUCCESS_MATCH"
+                                },
+                                "values": [
+                                    {
+                                        "value": {
+                                            "name": "off",
+                                            "id": "off"
+                                        }
+                                    },
+                                    {
+                                        "value": {
+                                            "name": "on",
+                                            "id": "on"
+                                        }
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -117,14 +131,28 @@
                     "source": "USER",
                     "slotValue": {
                         "type": "Simple",
-                        "value": "state",
+                        "value": "turn on",
                         "resolutions": {
                             "resolutionsPerAuthority": [
                                 {
                                     "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9.STATUS",
                                     "status": {
-                                        "code": "ER_SUCCESS_NO_MATCH"
-                                    }
+                                        "code": "ER_SUCCESS_MATCH"
+                                    },
+                                    "values": [
+                                        {
+                                            "value": {
+                                                "name": "off",
+                                                "id": "off"
+                                            }
+                                        },
+                                        {
+                                            "value": {
+                                                "name": "on",
+                                                "id": "on"
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -136,7 +164,7 @@
 }
 ============================================
 =========== speach response ==============
-Unknown FanIntent value state
+Fan is now on
 ==========================================
 =================================
 response: {
@@ -145,12 +173,12 @@ response: {
         "shouldEndSession": true,
         "outputSpeech": {
             "type": "PlainText",
-            "text": "Unknown FanIntent value state"
+            "text": "Fan is now on"
         },
         "card": {
             "type": "Simple",
             "title": "Fan Status",
-            "content": "Fan is currently state"
+            "content": "Fan is currently on"
         }
     },
     "sessionAttributes": {
@@ -163,7 +191,7 @@ response: {
     "version": "1.0",
     "session": {
         "new": true,
-        "sessionId": "amzn1.echo-api.session.2368ec52-723e-4eda-9ef1-2674cdccdf06",
+        "sessionId": "amzn1.echo-api.session.f6194ae7-83d2-430d-a074-9c6791199e74",
         "application": {
             "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
         },
@@ -246,17 +274,23 @@ response: {
                 "supportedInterfaces": {}
             },
             "apiEndpoint": "https://api.amazonalexa.com",
-            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwNDA4ODkzNiwiaWF0IjoxNzA0MDg4ODc2LCJuYmYiOjE3MDQwODg4NzYsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBUVBURjF3MW15dnp0OTZqanBGVktKVGdFQUFBQUFBQUNBblpMWGZMYW5uZVVhdnVWbk44RGlvbDkrNHBpRnVUajd5UlNLTmcyK2dVekUvNURtakEvM2ZKUmpwZXZLeTd1U2J2RnNEV0N5VGExN0V5RDJlQWR1UnpSYS92ZzF3bFNpRS9KaVdEVnhUN3NNdGx6OTRKUkFDTUt4bWxac2QzNEpPeXRLd3ZtMUJVZUNwcFoyUmpwdGttbk11OWN6VDdXdVdSUXVkbHR6R0F5ZmM4cDI4WkVjS3lZNDF4QmUrUlZlUGZveFVIdWhDd3IwZVAyZTAxMUd0aFVDd1hNTUdKczFZTE1iMzJhbFREZjM1ZTQrWUhRMEpwSnZXTjJFbHFKTERQRlppaUlTZ2gxNUgyRlBFQmxRc0J2RFd1eHZHRlBidVE0Z2VMak5kbk1zRHlnb29JbUl0V2tZb1JtSllGUURnQW1MOHc2UlBQUWpXdHFRN3lTOXRRaG1OUjJndHF0NnM0UldPd3N3OURHU1pSbDR1eHpwam0vc29ydzh6VlJXMWdVTHBOODdXU2xZK3lWeGxndW1VMnhTRnBjbVdSUUlDNVc0Z1UwVUlRQkwyL2dKMDVyTVBVTG1CUHRmIiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.IPzKcPe3q1DC2PKGVRTvZ4t7-e6BXPHhCg2f4ko97mEDpFXGCgRNbnFMkqYG2E2RjKYyl4V3sdKte4nx8bJkDt3-kBVCkN_VmGFWcmsqH5-Butyan2cxb08Lf-WQH0EoT4HmLKh_PhFRRFVbWySJxse6VXtjS4eEidWNkOoAmZiG_SM_7kWcCf7sDDGxifuQXo5_RVQu4KwbNi9HUKzQ6zbfgUlGKC3iHavpsdaKjvRFOVN_uzSdfgxrNc8M9O_seRcFViOr3e-EVJUz69sYGQTeH4Msbq6Q7QnoHpbzlh8mONclvUZOv-yUvzhBXig6jt2qt-6idsvDq5894xy5NA"
+            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwNDA4OTE0OCwiaWF0IjoxNzA0MDg5MDg4LCJuYmYiOjE3MDQwODkwODgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBUVBURjF3MW15dnp0OTZqanBGVktKVGdFQUFBQUFBQUJ2SGQ1bzZrZzE1SzlybVUzVTF1cmhkRzFiWk04TWNsNWZWVjJhR0h3MnRSWjVtdzY2NWhBQzdpaUNpZGRvSE1TSE9KMmJEOEduL2VOa240NnBYczJEem10anpWdEpoK3FMRlRya2FTNk4vNU81cWN1K09sSWFJNHZyMmpGL1hIVmFTcUpYbTdHeWVZTDFlTjdkWjVzWDRqWGxqME0xTUc1WmF2Wm5kRVY1VnpWaWp5VXpvck5qdnVkV3dVZmFoWVNSTkJUbjNrMW4wU2hub3FaSG9Ed1YxYXNUdnRYMmZJSVhXQWF4VGIrdHp3UDY0SDc5eTdBWWIvazdSUWRpK3hwWWtudG00Nkx1Qmp1VXZOcjI1UlVwdEJ3bWh4MUh3eDE5R0dQbFRRQVFGVHRUVXRVWVBxYkRmb0F6U3VveUo3c29EeFJLZDdlYVdXQXgzNXl6RmloNTNMZWFVdjZhZUNhMi9Ic2Q0U2RGSitvSGZ4Sk5zYVFBbEhZcUtVelBJd1RtUmZSZHpYZ2NQenpacmZnS09kcUhkQkNRcXRuQy83WjBGQkNTWGt0dFNhd0ltbG5JZHBvTDNydzdsNGt6IiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.bn5J_R8JhYVGfv2OPsrRrvrFAHgGJzYnwSMJrCoDkT-TrX6csZYS3UY6_PvNZc7eCIaBeXRYEvFodqLT46Crcss3dk9kKkHqf2-qgOU9jMPK4act46re0XUigVTJPEZR_ebDPw2D9kW4mcli1r67ln8lUKeds7duomORmhYwpIjS8uGr6ebnz9lFK6inPhUES1AZeoNZ_Fko-shP5pIwsUjyEataGCBftEgx-fmd0LtjQVToyCWcqw_kKRo_X53RsxnTTWx7nIpUBkTuz38V4qpZpz15ju-Qs3t-y3KNE5yk6YwtjBvejD6G2TQopzhPLGU9D9P_jYVurDCoO-EhVw"
         }
     },
     "request": {
         "type": "IntentRequest",
-        "requestId": "amzn1.echo-api.request.14c6f924-41da-4455-abed-a6abbbdcf7ce",
+        "requestId": "amzn1.echo-api.request.26260241-7fb6-406a-a3ba-99a79e5508a0",
         "locale": "en-US",
-        "timestamp": "2024-01-01T06:01:16Z",
+        "timestamp": "2024-01-01T06:04:48Z",
         "intent": {
-            "name": "AMAZON.FallbackIntent",
-            "confirmationStatus": "NONE"
+            "name": "FanIntent",
+            "confirmationStatus": "NONE",
+            "slots": {
+                "status": {
+                    "name": "status",
+                    "confirmationStatus": "NONE"
+                }
+            }
         }
     }
 }
@@ -266,7 +300,7 @@ response: {
     "version": "1.0",
     "session": {
         "new": false,
-        "sessionId": "amzn1.echo-api.session.2368ec52-723e-4eda-9ef1-2674cdccdf06",
+        "sessionId": "amzn1.echo-api.session.f6194ae7-83d2-430d-a074-9c6791199e74",
         "application": {
             "applicationId": "amzn1.ask.skill.f58e1e10-fe76-4cd9-a2bf-bc828d859ec9"
         },
@@ -345,13 +379,13 @@ response: {
                 "supportedInterfaces": {}
             },
             "apiEndpoint": "https://api.amazonalexa.com",
-            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwNDA4ODkzNiwiaWF0IjoxNzA0MDg4ODc2LCJuYmYiOjE3MDQwODg4NzYsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBUVBURjF3MW15dnp0OTZqanBGVktKVGdFQUFBQUFBQUNBblpMWGZMYW5uZVVhdnVWbk44RGlvbDkrNHBpRnVUajd5UlNLTmcyK2dVekUvNURtakEvM2ZKUmpwZXZLeTd1U2J2RnNEV0N5VGExN0V5RDJlQWR1UnpSYS92ZzF3bFNpRS9KaVdEVnhUN3NNdGx6OTRKUkFDTUt4bWxac2QzNEpPeXRLd3ZtMUJVZUNwcFoyUmpwdGttbk11OWN6VDdXdVdSUXVkbHR6R0F5ZmM4cDI4WkVjS3lZNDF4QmUrUlZlUGZveFVIdWhDd3IwZVAyZTAxMUd0aFVDd1hNTUdKczFZTE1iMzJhbFREZjM1ZTQrWUhRMEpwSnZXTjJFbHFKTERQRlppaUlTZ2gxNUgyRlBFQmxRc0J2RFd1eHZHRlBidVE0Z2VMak5kbk1zRHlnb29JbUl0V2tZb1JtSllGUURnQW1MOHc2UlBQUWpXdHFRN3lTOXRRaG1OUjJndHF0NnM0UldPd3N3OURHU1pSbDR1eHpwam0vc29ydzh6VlJXMWdVTHBOODdXU2xZK3lWeGxndW1VMnhTRnBjbVdSUUlDNVc0Z1UwVUlRQkwyL2dKMDVyTVBVTG1CUHRmIiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.IPzKcPe3q1DC2PKGVRTvZ4t7-e6BXPHhCg2f4ko97mEDpFXGCgRNbnFMkqYG2E2RjKYyl4V3sdKte4nx8bJkDt3-kBVCkN_VmGFWcmsqH5-Butyan2cxb08Lf-WQH0EoT4HmLKh_PhFRRFVbWySJxse6VXtjS4eEidWNkOoAmZiG_SM_7kWcCf7sDDGxifuQXo5_RVQu4KwbNi9HUKzQ6zbfgUlGKC3iHavpsdaKjvRFOVN_uzSdfgxrNc8M9O_seRcFViOr3e-EVJUz69sYGQTeH4Msbq6Q7QnoHpbzlh8mONclvUZOv-yUvzhBXig6jt2qt-6idsvDq5894xy5NA"
+            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmY1OGUxZTEwLWZlNzYtNGNkOS1hMmJmLWJjODI4ZDg1OWVjOSIsImV4cCI6MTcwNDA4OTE0OCwiaWF0IjoxNzA0MDg5MDg4LCJuYmYiOjE3MDQwODkwODgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBUVBURjF3MW15dnp0OTZqanBGVktKVGdFQUFBQUFBQUJ2SGQ1bzZrZzE1SzlybVUzVTF1cmhkRzFiWk04TWNsNWZWVjJhR0h3MnRSWjVtdzY2NWhBQzdpaUNpZGRvSE1TSE9KMmJEOEduL2VOa240NnBYczJEem10anpWdEpoK3FMRlRya2FTNk4vNU81cWN1K09sSWFJNHZyMmpGL1hIVmFTcUpYbTdHeWVZTDFlTjdkWjVzWDRqWGxqME0xTUc1WmF2Wm5kRVY1VnpWaWp5VXpvck5qdnVkV3dVZmFoWVNSTkJUbjNrMW4wU2hub3FaSG9Ed1YxYXNUdnRYMmZJSVhXQWF4VGIrdHp3UDY0SDc5eTdBWWIvazdSUWRpK3hwWWtudG00Nkx1Qmp1VXZOcjI1UlVwdEJ3bWh4MUh3eDE5R0dQbFRRQVFGVHRUVXRVWVBxYkRmb0F6U3VveUo3c29EeFJLZDdlYVdXQXgzNXl6RmloNTNMZWFVdjZhZUNhMi9Ic2Q0U2RGSitvSGZ4Sk5zYVFBbEhZcUtVelBJd1RtUmZSZHpYZ2NQenpacmZnS09kcUhkQkNRcXRuQy83WjBGQkNTWGt0dFNhd0ltbG5JZHBvTDNydzdsNGt6IiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFNQTZDR0RJM1NHWlBDSkJJRDRZN1Y0WVdNT0NVNUhTWk9NNkZVQjZNT09ZR05LV0tKRDNHRE1QV0FJSlNHVDZWVkRJQ0pYVktUSEs1U1RXNzI1Q0o3QlhKVVFaMk03S1VFRUdSVktYVVZCN0NHTkE3N0xJQ0lLS0E1VjRBSkRUVTRJTE5DNjZTWERERFhUTkdITEdBNVVFNUJRU1pQSUZHNDNOM1hQVUlLTTdBVTI3UVdLRUhWVEJHRkxKUEdQSjM1NTQ2U1dGTUtPVDVDUlciLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BTUFaTTMzVDNFUURPSkRHN0tBUUFXWjZUNlZWMlpWV09XWTU3VDdZU0ZDWkk2VkRZT0pJVUhWM1FOQjNESEFSNktPVVVZRjdEWVROT1hOVk5VNDRDTUFWUDJZRjVQVkRVTVRJWlpMWlROQ1RONExUUTRMTVdNSTJLNUxGVkpHV0pKWEJWS01TSFZMUE43RUYyU0FXNE5JQktUWkJNTUxSN1ZTREZHRkJWVVk2REpSU1FSS0dHVE5MVEpRUDJaNEs1NVVMWTc3TUJZNFpUNVo0NlhHVVc3M1Y3R0czQVNPTEYzVE9QS1dLS1lZQSJ9fQ.bn5J_R8JhYVGfv2OPsrRrvrFAHgGJzYnwSMJrCoDkT-TrX6csZYS3UY6_PvNZc7eCIaBeXRYEvFodqLT46Crcss3dk9kKkHqf2-qgOU9jMPK4act46re0XUigVTJPEZR_ebDPw2D9kW4mcli1r67ln8lUKeds7duomORmhYwpIjS8uGr6ebnz9lFK6inPhUES1AZeoNZ_Fko-shP5pIwsUjyEataGCBftEgx-fmd0LtjQVToyCWcqw_kKRo_X53RsxnTTWx7nIpUBkTuz38V4qpZpz15ju-Qs3t-y3KNE5yk6YwtjBvejD6G2TQopzhPLGU9D9P_jYVurDCoO-EhVw"
         }
     },
     "request": {
         "type": "SessionEndedRequest",
-        "requestId": "amzn1.echo-api.request.fe1b377a-038f-4c78-bf5e-81776fd30240",
-        "timestamp": "2024-01-01T06:01:17Z",
+        "requestId": "amzn1.echo-api.request.2335680d-7f3c-445e-99fd-7a146b208b1a",
+        "timestamp": "2024-01-01T06:04:49Z",
         "locale": "en-US",
         "reason": "ERROR",
         "error": {
