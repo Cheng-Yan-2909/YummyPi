@@ -131,10 +131,10 @@ def process_alexa_request(request_data):
         if "intent" in request_data["request"]:
             intent = request_data["request"]["intent"]
             val = intent["slots"]["status"]["value"]
-            if intent == "FanIntent":
+            if intent["name"] == "FanIntent":
                 return fan_intent(val)
 
-            elif intent == "DeviceIntent":
+            elif intent["name"] == "DeviceIntent":
                 return device_intent(val)
 
             else:
