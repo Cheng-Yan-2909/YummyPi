@@ -82,12 +82,14 @@ def get_user_id(request_data):
     if "session" in request_data:
         try:
             user_id = request_data["session"]["user"]["userId"]
+            print(f"[DEBUG] user id from session: {user_id}")
         except:
             user_id = None
 
     if user_id is None and "context" in request_data:
         try:
             user_id = request_data["context"]["System"]["user"]["userId"]
+            print(f"[DEBUG] user id from context: {user_id}")
         except:
             user_id = None
 
@@ -95,6 +97,7 @@ def get_user_id(request_data):
 
 def save_user_id(request_data):
     user_id = get_user_id(request_data)
+    print(f"[debug] saving user id: {user_id}")
     if user_id is not None:
         with open(user_id_file, "w") as w:
             w.write(user_id)
@@ -107,6 +110,8 @@ def check_user_id(request_data):
         with open(user_id_file) as r:
             user_id = r.read()
             r.close()
+
+        print(f"[DEBUG] saved user id: {user_id}")
 
         if user_id == get_user_id(request_data):
             return True
@@ -123,9 +128,6 @@ def process_alexa_request(request_data):
     s = "unknown"
 
     if "request" in request_data:
-        if not check_user_id(request_data):
-            return "Bad Request", 400
-
         if "intent" in request_data["request"]:
             intent = request_data["request"]["intent"]
             val = intent["slots"]["status"]["value"]
@@ -143,6 +145,9 @@ def process_alexa_request(request_data):
             t = request_data["request"]["type"]
             if "LaunchRequest" == request_data["request"]["type"]:
                 save_user_id(request_data)
+
+            if not check_user_id(request_data):
+                return "Bad Request", 400
 
             print(f"================= request type: {t} ====================", flush=True)
             return speach(f"Daniel Toy is {t}", "Fan Status", "Fan initialized", False)
