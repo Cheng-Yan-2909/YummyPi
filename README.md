@@ -96,13 +96,13 @@ To test this out, try the below code
 class DefaultVal:
     default_val = {}
 
-def test():
-    my_data1 = DefaultVal()
-    my_data2 = DefaultVal()
-    my_data3 = DefaultVal()
-    print(f"my_data1: {id(my_data1.default_val)}")
-    print(f"my_data2: {id(my_data2.default_val)}")
-    print(f"my_data3: {id(my_data3.default_val)}")
+
+my_data1 = DefaultVal()
+my_data2 = DefaultVal()
+my_data3 = DefaultVal()
+print(f"my_data1: {id(my_data1.default_val)}")
+print(f"my_data2: {id(my_data2.default_val)}")
+print(f"my_data3: {id(my_data3.default_val)}")
 ```
 You will get the below output:
 ```text
@@ -111,6 +111,34 @@ my_data2: 4312677952
 my_data3: 4312677952
 ```
 The integer shown is the address to the memory location where the data resides.
+
+<hr/>
+
+Another default value to be careful on is method arguments.
+
+```python
+import time
+def some_method(now=time.time()):
+    ...
+```
+
+Here, the default value of the argument ```now``` is **NOT** the actual current time.  The value is the time this method is loaded
+into memory -- a fixed value.  Run this test to see:
+```python
+def test_default_arg_value(now=time.time()):
+    print(f"now is: {now}")
+
+test_default_arg_value()
+test_default_arg_value()
+test_default_arg_value()
+```
+
+You will something like this.  The floating point value are the number of milli-seconds since epoch.
+```text
+now is: 1785540379.5673559
+now is: 1785540379.5673559
+now is: 1785540379.5673559
+```
 
 ## Dunder method
 

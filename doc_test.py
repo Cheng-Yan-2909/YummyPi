@@ -1,3 +1,4 @@
+import time
 
 
 class MyData:
@@ -20,6 +21,10 @@ class MyData:
 class DefaultVal:
     default_val = {}
 
+def test_default_arg_value(now=time.time()):
+    print(f"now is: {now}")
+
+
 
 def test():
     my_data1 = DefaultVal()
@@ -28,6 +33,12 @@ def test():
     print(f"my_data1: {id(my_data1.default_val)}")
     print(f"my_data2: {id(my_data2.default_val)}")
     print(f"my_data3: {id(my_data3.default_val)}")
+
+    print("=============================================")
+
+    test_default_arg_value()
+    test_default_arg_value()
+    test_default_arg_value()
 
 test()
 
