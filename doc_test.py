@@ -25,6 +25,21 @@ def test_default_arg_value(now=time.time()):
     print(f"now is: {now}")
 
 
+def test_default_arg_value2(data={}):
+    print(f"data is @: {id(data)}")
+
+
+def test_argument(primitive_type, object_type):
+    print("inside of 'test_argument' method")
+    print(f" - primitive_type value: {primitive_type}")
+    print(f" - object_type value: {object_type}")
+    print("changing both values")
+    primitive_type += 1
+    object_type.append("efgh")
+    print("after data changed")
+    print(f" - primitive_type value: {primitive_type}")
+    print(f" - object_type value: {object_type}")
+
 
 def test():
     my_data1 = DefaultVal()
@@ -35,10 +50,22 @@ def test():
     print(f"my_data3: {id(my_data3.default_val)}")
 
     print("=============================================")
+    test_default_arg_value()
+    test_default_arg_value()
+    test_default_arg_value()
 
-    test_default_arg_value()
-    test_default_arg_value()
-    test_default_arg_value()
+    print("=============================================")
+    test_default_arg_value2()
+    test_default_arg_value2()
+    test_default_arg_value2()
+
+    print("=============================================")
+    primitive_data = 3
+    object_data = ["abcd"]
+    test_argument(primitive_data, object_data)
+    print("after the function call to 'test_argument'")
+    print(f" - primitive_data: {primitive_data}")
+    print(f" - object_data: {object_data}")
 
 test()
 

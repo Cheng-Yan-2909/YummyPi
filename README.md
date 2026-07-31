@@ -140,6 +140,69 @@ now is: 1785540379.5673559
 now is: 1785540379.5673559
 ```
 
+Another test of default value:
+```python
+def test_default_arg_value2(data={}):
+    print(f"data is @: {id(data)}")
+
+test_default_arg_value2()
+test_default_arg_value2()
+test_default_arg_value2()
+```
+
+default value with same address location for the argument.
+```text
+data is @: 4373051648
+data is @: 4373051648
+data is @: 4373051648
+```
+
+# Arguments - passing by value or address
+
+Python shares this with Java where primitive data type are passed by value and objects are passed by address.
+Below test shows the difference between primitive data type passing and object data type passing.
+
+```python
+def test_argument(primitive_type, object_type):
+    print("inside of 'test_argument' method")
+    print(f" - primitive_type value: {primitive_type}")
+    print(f" - object_type value: {object_type}")
+    print("changing both values")
+    primitive_type += 1
+    object_type.append("efgh")
+    print("after data changed")
+    print(f" - primitive_type value: {primitive_type}")
+    print(f" - object_type value: {object_type}")
+
+print("=============================================")
+primitive_data = 3
+object_data = ["abcd"]
+test_argument(primitive_data, object_data)
+print("after the function call to 'test_argument'")
+print(f" - primitive_data: {primitive_data}")
+print(f" - object_data: {object_data}")
+```
+
+The variable ```primitive_data``` and ```object_data``` are defined outside of the ```test_argument``` method call.
+The ```test_argument``` method modifies the method argument value.  
+
+```text
+inside of 'test_argument' method
+ - primitive_type value: 3
+ - object_type value: ['abcd']
+changing both values
+after data changed
+ - primitive_type value: 4
+ - object_type value: ['abcd', 'efgh']
+after the function call to 'test_argument'
+ - primitive_data: 3
+ - object_data: ['abcd', 'efgh']
+```
+
+The sample output shows that operating on primitive values, only the values got changed, which stays within the scape of the method.
+But for object type data modification, the value are changed at the address location where the argument was passed in. 
+Therefore, the modification of the value from ```object_data``` changes the original data.
+
 ## Dunder method
 
 Python has set of method called **dunder** methods.  These are build in method that can be override.  Most frequent used is the ```__init__()``` method.   Note that this method only initialize the class after creation, not controlling the creation of the class.  To overwrite the creation you will need to override ```__new__()```
