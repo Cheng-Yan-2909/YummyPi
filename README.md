@@ -61,6 +61,8 @@ Python keeps some of the low level programing language features.  It has two set
 The ***primitive*** data type are fixed in memory size: int, float, char, byte, ... and now included str (a collection of char), dict, list, tuple (read-only list)
 
 Everything else is ***object***, including the class itself and methods.  You can access all members of the object using:
+
+dump attributes for method:
 ```python
 def my_func():
   print("test")
@@ -68,8 +70,24 @@ for name in dir(my_func):
   print(f"{name} ==> {getattr(my_func, name, '')}")
 ```
 
+dump attributes for dict
+```python
+d = {}
+for name in dir(d):
+  print(f"{name} ==> {getattr(d, name, '')}")
+```
+
 Noticed, ```getattr``` is a building in method that can get the object's attribute value.  There's also ```setattr``` to set attribute value.
 
+## Dunder method
+
+Python has set of method called **dunder** methods.  These are build in method that can be override.  Most frequent used is the ```__init__()``` method.   Note that this method only initialize the class after creation, not controlling the creation of the class.  To overwrite the creation you will need to override ```__new__()```
+
+```python
+d = {}
+for name in dir(d):
+  print(f"{name} ==> {getattr(d, name, '')}")
+```
 
 
 
