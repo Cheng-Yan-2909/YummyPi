@@ -3,19 +3,27 @@ import time
 
 class MyData:
     """
-
+        class doc... describe the class here
     """
 
     data: dict = None
 
-    def __init__(self, *, data):
-        self.data = data
+    def __init__(self, *, data=None):
+        if data is None:
+            self.data = {}
+        else:
+            self.data = data
 
     def add_data(self, *, key, value):
         self.data[key] = value
 
     def __setitem__(self, key, value):
         self.add_data(key=key, value=value)
+
+    def __getitem__(self, item):
+        if item in self.data:
+            return self.data[item]
+        return None
 
 
 class DefaultVal:
@@ -66,6 +74,12 @@ def test():
     print("after the function call to 'test_argument'")
     print(f" - primitive_data: {primitive_data}")
     print(f" - object_data: {object_data}")
+
+    print("=============================================")
+    my_data = MyData()
+    my_data["test"] = "works"
+
+    print(f"my_data.data: {my_data.data}")
 
 test()
 

@@ -213,5 +213,46 @@ for name in dir(d):
   print(f"{name} ==> {getattr(d, name, '')}")
 ```
 
+You can use dunder methods to define your own class's functionality.
+ex:
+
+```python
+class MyData:
+    """
+        class doc... describe the class here
+    """
+
+    data: dict = None
+
+    def __init__(self, *, data=None):
+        if data is None:
+            self.data = {}
+        else:
+            self.data = data
+
+    def add_data(self, *, key, value):
+        self.data[key] = value
+
+    def __setitem__(self, key, value):
+        self.add_data(key=key, value=value)
+
+    def __getitem__(self, item):
+        if item in self.data:
+            return self.data[item]
+        return None
+
+    
+my_data = MyData()
+my_data["test"] = "works"
+
+print(f"my_data.data: {my_data.data}")
+```
+
+the above test will show this:
+
+```text
+my_data.data: {'test': 'works'}
+```
+
 
 
