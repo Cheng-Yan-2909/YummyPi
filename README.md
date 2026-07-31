@@ -58,7 +58,7 @@ Python keeps some of the low level programing language features.  It has two set
 * primitive
 * object
 
-The ***primitive*** data type are fixed in memory size: int, float, char, byte, ... and now included str (a collection of char), dict, list, tuple (read-only list)
+The ***primitive*** data type are fixed in memory size: int, float, char, byte, ... and now included str (a collection of char)
 
 Everything else is ***object***, including the class itself and methods.  You can access all members of the object using:
 
@@ -78,6 +78,39 @@ for name in dir(d):
 ```
 
 Noticed, ```getattr``` is a building in method that can get the object's attribute value.  There's also ```setattr``` to set attribute value.
+
+## Default Values
+
+Be careful with default values where the values are not primitive data type.  When you have a simple default value such as:
+```python
+class MyTest:
+    data = {}
+
+```
+
+The value of ```data``` is a pointer to an address of a ```dict``` data type.   This address is fixed, such that all
+instances will be using the same address -- working with the same data.
+
+To test this out, try the below code
+```python
+class DefaultVal:
+    default_val = {}
+
+def test():
+    my_data1 = DefaultVal()
+    my_data2 = DefaultVal()
+    my_data3 = DefaultVal()
+    print(f"my_data1: {id(my_data1.default_val)}")
+    print(f"my_data2: {id(my_data2.default_val)}")
+    print(f"my_data3: {id(my_data3.default_val)}")
+```
+You will get the below output:
+```text
+my_data1: 4312677952
+my_data2: 4312677952
+my_data3: 4312677952
+```
+The integer shown is the address to the memory location where the data resides.
 
 ## Dunder method
 
