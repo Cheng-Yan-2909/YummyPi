@@ -1,29 +1,38 @@
 import time
 
 
-class MyData:
+class Jobs:
     """
         class doc... describe the class here
     """
 
-    data: dict = None
+    available_jobs = [
+        "teacher", "principal", "administrator"
+    ]
 
-    def __init__(self, *, data=None):
-        if data is None:
-            self.data = {}
-        else:
-            self.data = data
+    teacher = None
+    principal = None
+    administrator = None
+
 
     def add_data(self, *, key, value):
-        self.data[key] = value
+        if not key in self.available_jobs:
+            return
+        setattr(self, key, value)
 
     def __setitem__(self, key, value):
         self.add_data(key=key, value=value)
 
     def __getitem__(self, item):
-        if item in self.data:
-            return self.data[item]
+        if item in self.available_jobs:
+            return getattr(self, item)
         return None
+
+    def __str__(self):
+        s = ""
+        for job in self.available_jobs:
+            s = f"{s}, {job}={getattr(self, job)}"
+        return s
 
 
 class DefaultVal:
@@ -76,10 +85,12 @@ def test():
     print(f" - object_data: {object_data}")
 
     print("=============================================")
-    my_data = MyData()
-    my_data["test"] = "works"
-
-    print(f"my_data.data: {my_data.data}")
+    job = Jobs()
+    job["test"] = "testing job"
+    job["teacher"] = "science"
+    job["principal"] = "Bob"
+    print(f"job of 'teacher': {job['teacher']}")
+    print(f"my_job: {job}")
 
 test()
 
