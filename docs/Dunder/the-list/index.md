@@ -9,7 +9,7 @@ has_children: false
 
 You can search or use AI to get the latest set of dunder methods and descriptions.
 <br/>
-Dunder methods starts and ends with **__**
+Dunder methods starts and ends with two underscores ```__```
 
 ### Object Initialization and Cleanup
 * __new__(cls, ...): Handles object creation.
