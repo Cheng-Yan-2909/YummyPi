@@ -1,6 +1,6 @@
 ---
 layout: page
-nav_order: 10
+nav_order: 30
 title: Singleton
 permalink: /Singleton/
 has_children: false
