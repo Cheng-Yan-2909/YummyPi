@@ -58,6 +58,28 @@ def test_argument(primitive_type, object_type):
     print(f" - object_type value: {object_type}")
 
 
+class SingletonClass:
+    _singleton_instance_name_ = "_singleton_instance_name_"
+
+    def __new__(cls, *args, **kwargs):
+        try:
+            instance_name = f"{SingletonClass._singleton_instance_name_}_{cls.__module__}_{cls.__name__}"
+        except:
+            instance_name = f"{SingletonClass._singleton_instance_name_}_{cls.__name__}"
+
+        singleton_instance = getattr(cls, instance_name, None)
+
+        if singleton_instance is None:
+            singleton_instance = super(SingletonClass, cls).__new__(cls)
+            setattr(cls, instance_name, singleton_instance)
+
+        return singleton_instance
+
+class TestSingleton1(SingletonClass): pass
+
+class TestSingleton2(SingletonClass): pass
+
+
 def test():
     my_data1 = DefaultVal()
     my_data2 = DefaultVal()
@@ -91,6 +113,14 @@ def test():
     job["principal"] = "Bob"
     print(f"job of 'teacher': {job['teacher']}")
     print(f"my_job: {job}")
+
+    print("=============================================")
+    print(f"Singleton instance 1 id: {id(TestSingleton1())}")
+    print(f"Singleton instance 1 id: {id(TestSingleton1())}")
+    print(f"Singleton instance 1 id: {id(TestSingleton1())}")
+    print(f"Singleton instance 2 id: {id(TestSingleton2())}")
+    print(f"Singleton instance 2 id: {id(TestSingleton2())}")
+    print(f"Singleton instance 2 id: {id(TestSingleton2())}")
 
 test()
 
