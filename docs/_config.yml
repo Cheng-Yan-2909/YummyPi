@@ -2,7 +2,7 @@
 title: Python Coding Stuff
 email: nobody@github.io
 description: Python coding stuff...
-baseurl: https://cheng-yan-2909.github.io/YummyPi/
+baseurl: /
 url: https://cheng-yan-2909.github.io/YummyPi/
 
 markdown: GFM
