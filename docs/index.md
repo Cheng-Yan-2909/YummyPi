@@ -58,5 +58,4 @@ Global variable causes confusion and data conflict. Confusion:
 * when creating a local variable with the same name as global variable, reading and writing can be confusing
 * cannot access global variable without ```global``` keyword.
 
-<hr>
 
