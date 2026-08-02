@@ -57,6 +57,7 @@ def test_argument(primitive_type, object_type):
     print(f" - primitive_type value: {primitive_type}")
     print(f" - object_type value: {object_type}")
 
+##################################################################
 
 class SingletonClass:
     _singleton_instance_name_ = "_singleton_instance_name_"
@@ -78,6 +79,36 @@ class SingletonClass:
 class TestSingleton1(SingletonClass): pass
 
 class TestSingleton2(SingletonClass): pass
+
+
+##################################################################
+
+decorated_method = []
+def my_decorator(func):
+    print(f"wrapping func: {func.__name__}")
+    decorated_method.append(func)
+    return func
+
+def test_func_wrap():
+    print("======== test_func_wrap ========= ")
+    global decorated_method
+    decorated_method = []
+    def _my_func():
+        print("I am my_func")
+
+    global my_func
+    my_func = my_decorator( _my_func )
+
+def test_decorator():
+    print("======== test_decorator ========= ")
+    global decorated_method
+    decorated_method = []
+
+    global my_func
+    @my_decorator
+    def my_func():
+        print("I am my_func")
+
 
 
 def test():
@@ -121,6 +152,21 @@ def test():
     print(f"Singleton instance 2 id: {id(TestSingleton2())}")
     print(f"Singleton instance 2 id: {id(TestSingleton2())}")
     print(f"Singleton instance 2 id: {id(TestSingleton2())}")
+
+    print("=============================================")
+    test_decorator()
+    print("Calling 'my_func' -- ", end="")
+    my_func()
+    for func in decorated_method:
+        print("Calling from 'decorated_method' list: ", end="")
+        func()
+
+    test_func_wrap()
+    print("Calling 'my_func' -- ", end="")
+    my_func()
+    for func in decorated_method:
+        print("Calling from 'decorated_method' list: ", end="")
+        func()
 
 test()
 
