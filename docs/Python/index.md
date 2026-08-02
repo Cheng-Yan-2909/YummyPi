@@ -154,7 +154,7 @@ def test_argument(primitive_type, object_type):
     print(f" - primitive_type value: {primitive_type}")
     print(f" - object_type value: {object_type}")
 
-print("=============================================")
+
 primitive_data = 3
 object_data = ["abcd"]
 test_argument(primitive_data, object_data)
