@@ -1,6 +1,6 @@
 ---
 layout: page
-nav_order: 10
+nav_order: 20
 title: Dunder Methods
 permalink: /Dunder/
 has_children: true
