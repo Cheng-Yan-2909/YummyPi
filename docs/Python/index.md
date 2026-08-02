@@ -112,6 +112,31 @@ data is @: 4373051648
 data is @: 4373051648
 ```
 
+# Classes
+
+Class is a collection of variables and methods that related or depends on each other.  Class should be small and
+split into parent and children.
+
+ex:
+```python
+class Person:
+    first_name = None
+    last_name = None
+    birth_day = None
+
+class Student(Person):
+    grade_level = None
+
+class Teacher(Person):
+    subject = None  # the subject this teach teaches
+
+```
+
+Above the class ```Student``` and ```Teacher``` both extends ```Person```, this would allow them to inherent the parent's 
+attributes.
+
+
+
 # Arguments - passing by value or address
 
 Python shares this with Java where primitive data type are passed by value and objects are passed by address.
