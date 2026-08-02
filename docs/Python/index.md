@@ -1,6 +1,6 @@
 ---
 layout: page
-nav_order: 1
+nav_order: 20
 title: Python - General
 permalink: /Python/
 has_children: false

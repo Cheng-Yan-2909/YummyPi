@@ -1,6 +1,6 @@
 ---
 layout: page
-nav_order: 1
+nav_order: 10
 title: Coding - General
 permalink: /Coding/
 has_children: false
