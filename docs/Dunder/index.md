@@ -3,7 +3,7 @@ layout: page
 nav_order: 10
 title: Dunder Methods
 permalink: /Dunder/
-has_children: false
+has_children: true
 ---
 
 
