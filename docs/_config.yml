@@ -1,0 +1,22 @@
+
+title: Python Coding Stuff
+email: nobody@github.io
+description: Python coding stuff...
+baseurl: https://cheng-yan-2909.github.io/YummyPi/
+url: https://cheng-yan-2909.github.io/YummyPi/
+
+markdown: GFM
+#
+# https://just-the-docs.com/
+#
+remote_theme: just-the-docs/just-the-docs
+aux_links:
+  "src":
+    - "https://github.com/Cheng-Yan-2909/YummyPi"
+
+aux_link_new_tab: true
+
+callouts:
+  important:
+    title: Note
+    color: yellow
