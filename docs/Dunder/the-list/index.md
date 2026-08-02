@@ -7,6 +7,8 @@ permalink: /Dunder/the-list
 has_children: false
 ---
 
+You can search or use AI to get the latest set of dunder methods and descriptions.
+
 ### Object Initialization and Cleanup
 * __new__(cls, ...): Handles object creation.
 * __init__(self, ...): Handles object initialization.
