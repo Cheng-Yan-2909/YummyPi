@@ -1,8 +1,8 @@
 ---
 layout: page
 nav_order: 1
-title: Coding - General
-permalink: /Coding/
+title: Python - General
+permalink: /Python/
 has_children: false
 ---
 
