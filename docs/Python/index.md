@@ -17,7 +17,7 @@ The ***primitive*** data type are fixed in memory size: int, float, char, byte, 
 
 Everything else is ***object***, including the class itself and methods.  You can access all members of the object using:
 
-dump attributes for method:
+dump attributes for objects you can use the ```dir``` method:
 ```python
 def my_func():
   print("test")
