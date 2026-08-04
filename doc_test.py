@@ -168,5 +168,12 @@ def test():
         print("Calling from 'decorated_method' list: ", end="")
         func()
 
+    print("=============================================")
+    print("Globals")
+    for k, v in globals().items():
+        print(f"{k} ==> {v}")
+
+
+
 test()
 
