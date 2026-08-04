@@ -115,9 +115,15 @@ def test():
     my_data1 = DefaultVal()
     my_data2 = DefaultVal()
     my_data3 = DefaultVal()
-    print(f"my_data1: {id(my_data1.default_val)}")
-    print(f"my_data2: {id(my_data2.default_val)}")
-    print(f"my_data3: {id(my_data3.default_val)}")
+    print(f"id(my_data1.default_val): {id(my_data1.default_val)}")
+    print(f"id(my_data2.default_val): {id(my_data2.default_val)}")
+    print(f"id(my_data3.default_val): {id(my_data3.default_val)}")
+
+    my_data1.default_val["test"] = "here"
+    print("=============================================")
+    print(f"my_data1.default_val: {my_data1.default_val}")
+    print(f"my_data2.default_val: {my_data2.default_val}")
+    print(f"my_data3.default_val: {my_data3.default_val}")
 
     print("=============================================")
     test_default_arg_value()

@@ -55,17 +55,28 @@ class DefaultVal:
 my_data1 = DefaultVal()
 my_data2 = DefaultVal()
 my_data3 = DefaultVal()
-print(f"my_data1: {id(my_data1.default_val)}")
-print(f"my_data2: {id(my_data2.default_val)}")
-print(f"my_data3: {id(my_data3.default_val)}")
+print(f"id(my_data1.default_val): {id(my_data1.default_val)}")
+print(f"id(my_data2.default_val): {id(my_data2.default_val)}")
+print(f"id(my_data3.default_val): {id(my_data3.default_val)}")
+
+my_data1.default_val["test"] = "here"
+print("=============================================")
+print(f"my_data1.default_val: {my_data1.default_val}")
+print(f"my_data2.default_val: {my_data2.default_val}")
+print(f"my_data3.default_val: {my_data3.default_val}")
 ```
 You will get the below output:
 ```text
-my_data1: 4312677952
-my_data2: 4312677952
-my_data3: 4312677952
+id(my_data1.default_val): 4312855360
+id(my_data2.default_val): 4312855360
+id(my_data3.default_val): 4312855360
+=============================================
+my_data1.default_val: {'test': 'here'}
+my_data2.default_val: {'test': 'here'}
+my_data3.default_val: {'test': 'here'}
 ```
-The integer shown is the address to the memory location where the data resides.
+The integer shown is the address to the memory location where the data resides.  The 2nd set of output is the value of the dict, which
+only the variable ```my_data1``` has set, and all others gets the same value.
 
 <hr/>
 
